@@ -21,7 +21,7 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
 
       - name: Install Android API 36 and build tools
         run: sdkmanager 'platforms;android-36' 'build-tools;35.0.0'
