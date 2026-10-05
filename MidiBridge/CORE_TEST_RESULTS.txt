@@ -1,0 +1,15 @@
+PASS transparentSliceAndTimestamp
+PASS allBytesAcrossRandomChunks
+PASS detachedAndEmptySend
+PASS invalidRange
+PASS failedSendNotCountedAsDelivered
+PASS detachWaitsForInFlightSend
+PASS fragmentedProgramChange
+PASS runningStatusAndRealtime
+PASS fragmentedSysexWithRealtime
+PASS sysexMemoryBounded
+PASS systemCommonCancelsRunningStatus
+PASS monitorResetClearsPartialMessages
+PASS multipleMessagesInOneChunk
+PASS interruptedSysexResynchronizes
+PASS 14/14 core JVM checks. Android/hardware NOT tested.

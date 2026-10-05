@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MIDI Bridge</string>
+    <string name="subtitle">CHOCOLATE &#8594; Android &#8594; TONEX</string>
+    <string name="version_hint">USB + Bluetooth MIDI host &#183; 0.1.0</string>
+    <string name="bluetooth_title">1. Bluetooth MIDI</string>
+    <string name="bluetooth_hint">Kapcsold be a sima Chocolate ped&#225;lt. MIDI-m&#243;dban haszn&#225;ld, &#233;s a kapcsol&#243;d&#225;s el&#337;tt z&#225;rd be a CubeSuite-ot.</string>
+    <string name="scan">Bluetooth scan</string>
+    <string name="scan_stop">Keres&#233;s le&#225;ll&#237;t&#225;sa</string>
+    <string name="all_ble">Minden BLE eszk&#246;z mutat&#225;sa</string>
+    <string name="disconnect">Bluetooth kapcsolat bont&#225;sa</string>
+    <string name="routing_title">2. MIDI routing</string>
+    <string name="routing_hint">Bemenet: ahonnan a jel &#233;rkezik. Kimenet: ahov&#225; tov&#225;bb&#237;tjuk. Minden MIDI-csatorna v&#225;ltozatlan marad.</string>
+    <string name="input_label">INPUT / Bemenet &#183; Chocolate</string>
+    <string name="output_label">OUTPUT / Kimenet &#183; TONEX</string>
+    <string name="refresh">USB / MIDI eszk&#246;z&#246;k friss&#237;t&#233;se</string>
+    <string name="route_start">Tov&#225;bb&#237;t&#225;s ind&#237;t&#225;sa</string>
+    <string name="route_stop">Tov&#225;bb&#237;t&#225;s le&#225;ll&#237;t&#225;sa</string>
+    <string name="keep_screen">Kijelz&#337; &#233;bren tart&#225;sa</string>
+    <string name="test_title">3. TONEX kimeneti teszt</string>
+    <string name="test_hint">A teszt a Chocolate n&#233;lk&#252;l is k&#252;ld PC-jelet a kiv&#225;lasztott kimenetre. Csak le&#225;ll&#237;tott routing mellett haszn&#225;lhat&#243;; megv&#225;ltoztathatja a ped&#225;l presetj&#233;t.</string>
+    <string name="channel">MIDI-csatorna (1&#8211;16)</string>
+    <string name="program">Program Change (0&#8211;127)</string>
+    <string name="send_test">PC teszt k&#252;ld&#233;se</string>
+    <string name="monitor_title">4. MIDI monitor</string>
+    <string name="monitor_switch">MIDI-&#252;zenetek napl&#243;z&#225;sa</string>
+    <string name="copy_log">Napl&#243; m&#225;sol&#225;sa</string>
+    <string name="clear_log">Napl&#243; t&#246;rl&#233;se</string>
+    <string name="help">Haszn&#225;lat &#233;s hibakeres&#233;s</string>
+    <string name="settings">Alkalmaz&#225;sbe&#225;ll&#237;t&#225;sok</string>
+    <string name="hardware_notice">MIDI-vez&#233;rl&#233;st tov&#225;bb&#237;t, nem hangot. A telefon USB host/OTG &#233;s MIDI t&#225;mogat&#225;sa sz&#252;ks&#233;ges; a TONEX legyen saj&#225;t t&#225;pon. Hardveres ellen&#337;rz&#233;st ig&#233;nyl&#337; els&#337; v&#225;ltozat.</string>
+</resources>

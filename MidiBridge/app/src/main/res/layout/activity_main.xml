@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fillViewport="true" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="18dp">
+            <TextView style="@style/Heading" android:text="@string/app_name" android:textSize="32sp" />
+            <TextView style="@style/Body" android:text="@string/subtitle" android:textColor="@color/accent" android:textSize="16sp" />
+            <TextView style="@style/Body" android:text="@string/version_hint" />
+            <TextView android:id="@+id/connectionState" style="@style/Body" android:textSize="16sp"
+                android:textColor="@color/accent" android:paddingTop="8dp" android:accessibilityLiveRegion="polite" />
+            <LinearLayout style="@style/Card">
+                <TextView style="@style/Heading" android:text="@string/bluetooth_title" />
+                <TextView style="@style/Body" android:text="@string/bluetooth_hint" />
+                <Button android:id="@+id/scanButton" style="@style/Action" android:text="@string/scan" />
+                <Switch android:id="@+id/allBle" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:minHeight="48dp" android:text="@string/all_ble" />
+                <TextView android:id="@+id/bleState" style="@style/Body" />
+                <LinearLayout android:id="@+id/bleResults" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical" />
+                <Button android:id="@+id/disconnectButton" style="@style/Action" android:text="@string/disconnect" />
+            </LinearLayout>
+            <LinearLayout style="@style/Card">
+                <TextView style="@style/Heading" android:text="@string/routing_title" />
+                <TextView style="@style/Body" android:text="@string/routing_hint" />
+                <TextView style="@style/Body" android:text="@string/input_label" android:labelFor="@id/inputSpinner" />
+                <Spinner android:id="@+id/inputSpinner" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:minHeight="56dp" android:spinnerMode="dialog" android:prompt="@string/input_label" />
+                <TextView style="@style/Body" android:text="@string/output_label" android:labelFor="@id/outputSpinner" />
+                <Spinner android:id="@+id/outputSpinner" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:minHeight="56dp" android:spinnerMode="dialog" android:prompt="@string/output_label" />
+                <Button android:id="@+id/refreshButton" style="@style/Action" android:text="@string/refresh" />
+                <TextView android:id="@+id/usbState" style="@style/Body" android:textSize="12sp" android:textIsSelectable="true" />
+                <Button android:id="@+id/startButton" style="@style/Action" android:text="@string/route_start"
+                    android:backgroundTint="@color/accent" android:textColor="@color/background" />
+                <Button android:id="@+id/stopButton" style="@style/Action" android:text="@string/route_stop" />
+                <Switch android:id="@+id/keepScreen" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:minHeight="48dp" android:text="@string/keep_screen" />
+            </LinearLayout>
+            <LinearLayout style="@style/Card">
+                <TextView style="@style/Heading" android:text="@string/test_title" />
+                <TextView style="@style/Body" android:text="@string/test_hint" />
+                <TextView style="@style/Body" android:text="@string/channel" android:labelFor="@id/channelSpinner" />
+                <Spinner android:id="@+id/channelSpinner" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:minHeight="48dp" />
+                <TextView style="@style/Body" android:text="@string/program" android:labelFor="@id/programEdit" />
+                <EditText android:id="@+id/programEdit" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:minHeight="48dp" android:inputType="number"
+                    android:maxLength="3" android:singleLine="true" android:importantForAutofill="no"
+                    android:text="0" android:selectAllOnFocus="true" />
+                <Button android:id="@+id/testButton" style="@style/Action" android:text="@string/send_test" />
+            </LinearLayout>
+            <LinearLayout style="@style/Card">
+                <TextView style="@style/Heading" android:text="@string/monitor_title" />
+                <TextView android:id="@+id/counters" style="@style/Body" android:textColor="@color/accent" />
+                <Switch android:id="@+id/monitorSwitch" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:minHeight="48dp" android:checked="true" android:text="@string/monitor_switch" />
+                <TextView android:id="@+id/logText" style="@style/Body" android:fontFamily="monospace"
+                    android:textSize="12sp" android:minLines="4" android:maxLines="14"
+                    android:scrollbars="vertical" android:textIsSelectable="true" android:gravity="bottom" />
+                <Button android:id="@+id/copyButton" style="@style/Action" android:text="@string/copy_log" />
+                <Button android:id="@+id/clearButton" style="@style/Action" android:text="@string/clear_log" />
+            </LinearLayout>
+            <Button android:id="@+id/helpButton" style="@style/Action" android:text="@string/help" android:layout_marginTop="16dp" />
+            <Button android:id="@+id/settingsButton" style="@style/Action" android:text="@string/settings" />
+            <TextView style="@style/Body" android:text="@string/hardware_notice" android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

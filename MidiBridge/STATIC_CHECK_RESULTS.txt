@@ -1,0 +1,1 @@
+PASS XML syntax: 8 files; resource-ID/string references; intended permissions; POSIX shell syntax.
